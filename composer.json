@@ -1,7 +1,7 @@
 {
     "name": "apitoolkits/curl",
     "description" : "Custom PHP Curl library for the Laravel framework - developed by Atk",
-	"version" : "1.1.0",
+	"version" : "1.0.1",
 	"keywords" : [
 		"Laravel",
 		"Curl",
