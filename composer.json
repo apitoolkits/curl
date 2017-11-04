@@ -1,0 +1,41 @@
+{
+    "name": "apitoolkits/curl",
+    "description" : "Custom PHP Curl library for the Laravel framework - developed by Atk",
+	"version" : "1.1.0",
+	"keywords" : [
+		"Laravel",
+		"Curl",
+		"Apitoolkits"
+	],
+	"homepage" : "http://apitoolkits.com",
+	"license" : "MIT",
+    "authors": [
+        {
+            "name": "apitoolkits",
+            "email": "webmaster@apitoolkits.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Apitoolkits\\Curl\\": "src/"
+        }
+    },
+	"extra" : {
+		"laravel" : {
+			"providers" : [
+				"Apitoolkits\\Curl\\CurlServiceProvider"
+			],
+			"aliases" : {
+				"Curl" : "Apitoolkits\\Curl\\Facades\\Curl"
+			}
+		}
+	},
+	"minimum-stability" : "stable"
+}
