@@ -32,7 +32,7 @@ Pull this package in through Composer.
 
     {
         "require": {
-            "apitoolkits/curl": "dev-master"
+            "apitoolkits/curl": "1.0.*"
         }
     }
 
