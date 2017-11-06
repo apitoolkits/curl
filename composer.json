@@ -34,6 +34,5 @@
 				"Curl" : "Apitoolkits\\Curl\\Facades\\Curl"
 			}
 		}
-	},
-	"minimum-stability" : "dev"
+	}
 }
