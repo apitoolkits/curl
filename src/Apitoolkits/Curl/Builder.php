@@ -14,7 +14,7 @@ class Builder {
 			'FOLLOWLOCATION'        => false,
 			'CONNECTTIMEOUT'        => '',
 			'TIMEOUT'               => 30,
-			'USERAGENT'             => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/62.0.3202.75 Safari/534.30',
+			'USERAGENT'             => '',
 			'URL'                   => '',
 			'POST'                  => false,
 			'HTTPHEADER'            => array(),

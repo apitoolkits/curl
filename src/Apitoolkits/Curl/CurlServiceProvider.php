@@ -11,6 +11,15 @@ class CurlServiceProvider extends ServiceProvider {
 	 */
 	protected $defer = false;
 
+	/**
+	 * Bootstrap the application events.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		$this->package('apitoolkits/curl');
+	}
 
 	/**
 	 * Register the service provider.
@@ -19,12 +28,19 @@ class CurlServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
+		$this->app['curl']=$this->app->share(function($app){
+			return new Curl;
+		});
 		
 		$this->app->singleton('Curl', function () {
-                return new CurlService();
+                return new Curl();
             }
         );
 		
+		$this->app->booting(function(){
+			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
+			$loader->alias('Curl', 'Apitoolkits\Curl\Facades\Curl');
+		});
 	}
 
 	/**
