@@ -178,7 +178,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "29e8618a45d090572e092abf193a257bf28c48d9"
+                "reference": "db61f3f6d507ce417ca993e1f93585db7efd8b12"
             },
             "dist": {
                 "type": "zip",
@@ -197,9 +197,6 @@
                 "jeremeamia/superclosure": "~1.0.1",
                 "patchwork/utf8": "~1.1"
 			},
-            "suggest": {
-                "jeremeamia/superclosure": "Required to be able to serialize closures (~2.0)."
-            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -220,13 +217,13 @@
             ],
             "authors": [
                 {
-                    "name": "Apitoolkits",
-                    "email": "webmaster@apitoolkits.com"
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
                 }
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2015-03-27 14:49:11"
+            "time": "2015-01-27T20:51:43+00:00"
         }
     ],
     "packages-dev": [],
