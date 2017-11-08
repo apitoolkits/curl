@@ -18,7 +18,7 @@ class CurlServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('apitoolkits/curl');
+		
 	}
 
 	/**
@@ -28,19 +28,11 @@ class CurlServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['curl']=$this->app->share(function($app){
-			return new Curl;
-		});
-		
 		$this->app->singleton('Curl', function () {
                 return new Curl();
             }
         );
 		
-		$this->app->booting(function(){
-			$loader = \Illuminate\Foundation\AliasLoader::getInstance();
-			$loader->alias('Curl', 'Apitoolkits\Curl\Facades\Curl');
-		});
 	}
 
 	/**
